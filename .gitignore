@@ -14,3 +14,6 @@ Thumbs.db
 *.swp
 *.swo
 *~
+
+convert_obsidian_to_github.py
+convert-to-github.sh
