@@ -1,0 +1,16 @@
+# Backup files from conversion script
+*.backup
+
+# Obsidian files
+.obsidian/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~

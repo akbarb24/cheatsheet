@@ -5,20 +5,20 @@
 
 ## 📋 Content List
 
-1. [[#Introduction to Parallel & Concurrency Programming]]
-2. [[#Thread & ExecutorService]]
-3. [[#Introduction to Coroutine]]
-4. [[#Job]]
-5. [[#Async & Deferred]]
-6. [[#Coroutine Context]]
-7. [[#Coroutine Dispatcher]]
-8. [[#Coroutine Scope]]
-9. [[#Exception Handling]]
-10. [[#Mutex & Semaphore]]
-11. [[#Flow]]
-12. [[#Channel]]
-13. [[#Shared Flow & State Flow]]
-14. [[#Advanced Topics]]
+1. [Introduction to Parallel & Concurrency Programming](#introduction-to-parallel-concurrency-programming)
+2. [Thread & ExecutorService](#thread-executorservice)
+3. [Introduction to Coroutine](#introduction-to-coroutine)
+4. [Job](#job)
+5. [Async & Deferred](#async-deferred)
+6. [Coroutine Context](#coroutine-context)
+7. [Coroutine Dispatcher](#coroutine-dispatcher)
+8. [Coroutine Scope](#coroutine-scope)
+9. [Exception Handling](#exception-handling)
+10. [Mutex & Semaphore](#mutex-semaphore)
+11. [Flow](#flow)
+12. [Channel](#channel)
+13. [Shared Flow & State Flow](#shared-flow-state-flow)
+14. [Advanced Topics](#advanced-topics)
 
 ---
 
@@ -69,7 +69,7 @@ Concurrency is running multiple tasks by switching between them (time-slicing), 
 - Best suited for **Concurrency Programming**
 - Thread can do other work while waiting for I/O
 
-[[#📋 Content List|← Back to Contents ]]
+[← Back to Contents ](#content-list)
 
 ---
 
@@ -161,7 +161,7 @@ future.cancel(true)
 - `isDone()` - Check completion
 - `cancel()` - Cancel task
 
-[[#📋 Content List|← Back to Contents ]]
+[← Back to Contents ](#content-list)
 
 ---
 
@@ -245,7 +245,7 @@ repeat(100_000) {
 // vs 100,000 threads (will crash or consume huge memory)
 ```
 
-[[#📋 Content List|← Back to Contents ]]
+[← Back to Contents ](#content-list)
 
 ---
 
@@ -350,7 +350,7 @@ val result = withTimeoutOrNull(1000) {
 } // Returns null if timeout
 ```
 
-[[#📋 Content List|← Back to Contents ]]
+[← Back to Contents ](#content-list)
 
 ---
 
@@ -414,7 +414,7 @@ val deferred3 = async { getData3() }
 val results: List<Data> = awaitAll(deferred1, deferred2, deferred3)
 ```
 
-[[#📋 Content List|← Back to Contents ]]
+[← Back to Contents ](#content-list)
 
 ---
 
@@ -446,7 +446,7 @@ launch(Dispatchers.IO + CoroutineName("MyCoroutine")) {
 }
 ```
 
-[[#📋 Content List|← Back to Contents ]]
+[← Back to Contents ](#content-list)
 
 ---
 
@@ -537,7 +537,7 @@ launch(Dispatchers.Main) {
 - Switch from IO to Default for CPU-intensive work
 - Keep UI updates on Main thread
 
-[[#📋 Content List|← Back to Contents ]]
+[← Back to Contents ](#content-list)
 
 ---
 
@@ -693,7 +693,7 @@ delay(1000)
 job.cancel()
 ```
 
-[[#📋 Content List|← Back to Contents ]]
+[← Back to Contents ](#content-list)
 
 ---
 
@@ -834,7 +834,7 @@ supervisorScope {
 }
 ```
 
-[[#📋 Content List|← Back to Contents ]]
+[← Back to Contents ](#content-list)
 
 ---
 
@@ -921,7 +921,7 @@ repeat(10) {
 - Limiting concurrent database connections
 - Controlling API call rate
 
-[[#📋 Content List|← Back to Contents ]]
+[← Back to Contents ](#content-list)
 
 ---
 
@@ -1045,7 +1045,7 @@ job.cancel() // Cancels flow
 
 **Flow automatically checks for cancellation** in built-in operators.
 
-[[#📋 Content List|← Back to Contents ]]
+[← Back to Contents ](#content-list)
 
 ---
 
@@ -1243,7 +1243,7 @@ delay(5000)
 ticker.cancel()
 ```
 
-[[#📋 Content List|← Back to Contents ]]
+[← Back to Contents ](#content-list)
 
 ---
 
@@ -1345,7 +1345,7 @@ println("Current state: ${stateFlow.value}")
 - Better integration with Flow operators
 - Clearer semantics for state management
 
-[[#📋 Content List|← Back to Contents ]]
+[← Back to Contents ](#content-list)
 
 ---
 
@@ -1422,7 +1422,7 @@ job.cancel()
 - Logging after cancellation
 - Releasing resources that must be released
 
-[[#📋 Content List|← Back to Contents ]]
+[← Back to Contents ](#content-list)
 
 ---
 
@@ -1544,4 +1544,4 @@ val job = launch {
 - YouTube: youtube.com/c/ProgrammerZamanNow
 - Telegram: @khannedy
 
-[[#📋 Content List|← Back to Contents ]]
+[← Back to Contents ](#content-list)

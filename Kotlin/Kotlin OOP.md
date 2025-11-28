@@ -4,53 +4,53 @@ _Based on material By Eko Kurniawan Khannedy_
 
 ## 📋 Content List
 
-1. [[#Class & Object]]
-2. [[#Properties]]
-3. [[#Constructor]]
-4. [[#Function]]
-5. [[#This Keyword]]
-6. [[#Inheritance]]
-7. [[#Function Overriding]]
-8. [[#Properties Overriding]]
-9. [[#Super Keyword]]
-10. [[#Any Class]]
-11. [[#Type Check & Casts]]
-12. [[#toString Function]]
-13. [[#Equals Function]]
-14. [[#HashCode Function]]
-15. [[#Abstract Class]]
-16. [[#Getter and Setter]]
-17. [[#Late-Initialized Properties]]
-18. [[#Interface]]
-19. [[#Visibility Modifiers]]
-20. [[#Extension Function]]
-21. [[#Extension Properties]]
-22. [[#Data Class]]
-23. [[#Sealed Class]]
-24. [[#Inner Class]]
-25. [[#Anonymous Class]]
-26. [[#Enum Class]]
-27. [[#Singleton Object]]
-28. [[#Companion Object]]
-29. [[#Type Alias]]
-30. [[#Inline Class]]
-31. [[#Delegation]]
-32. [[#Lazy Properties]]
-33. [[#Observable Properties]]
-34. [[#Destructuring Declarations]]
-35. [[#Operator Overloading]]
-36. [[#Null Safety]]
-37. [[#Exception]]
-38. [[#Annotation]]
-39. [[#Reflection]]
-40. [[#Scope Functions]]
-41. [[#Polymorphism]]
+1. [Class & Object](#class-object)
+2. [Properties](#properties)
+3. [Constructor](#constructor)
+4. [Function](#function)
+5. [This Keyword](#this-keyword)
+6. [Inheritance](#inheritance)
+7. [Function Overriding](#function-overriding)
+8. [Properties Overriding](#properties-overriding)
+9. [Super Keyword](#super-keyword)
+10. [Any Class](#any-class)
+11. [Type Check & Casts](#type-check-casts)
+12. [toString Function](#tostring-function)
+13. [Equals Function](#equals-function)
+14. [HashCode Function](#hashcode-function)
+15. [Abstract Class](#abstract-class)
+16. [Getter and Setter](#getter-and-setter)
+17. [Late-Initialized Properties](#late-initialized-properties)
+18. [Interface](#interface)
+19. [Visibility Modifiers](#visibility-modifiers)
+20. [Extension Function](#extension-function)
+21. [Extension Properties](#extension-properties)
+22. [Data Class](#data-class)
+23. [Sealed Class](#sealed-class)
+24. [Inner Class](#inner-class)
+25. [Anonymous Class](#anonymous-class)
+26. [Enum Class](#enum-class)
+27. [Singleton Object](#singleton-object)
+28. [Companion Object](#companion-object)
+29. [Type Alias](#type-alias)
+30. [Inline Class](#inline-class)
+31. [Delegation](#delegation)
+32. [Lazy Properties](#lazy-properties)
+33. [Observable Properties](#observable-properties)
+34. [Destructuring Declarations](#destructuring-declarations)
+35. [Operator Overloading](#operator-overloading)
+36. [Null Safety](#null-safety)
+37. [Exception](#exception)
+38. [Annotation](#annotation)
+39. [Reflection](#reflection)
+40. [Scope Functions](#scope-functions)
+41. [Polymorphism](#polymorphism)
 
 ---
 
 ## Class & Object
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Blueprint and instances for creating objects in Kotlin**
 
@@ -78,7 +78,7 @@ val customer = Customer()
 
 ## Properties
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Data fields/attributes that objects can hold**
 
@@ -105,7 +105,7 @@ println(person.firstName) // John
 
 ## Constructor
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Special functions to initialize objects when created**
 
@@ -152,7 +152,7 @@ class Person(
 
 ## Function
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Behaviors/methods that objects can perform**
 
@@ -180,7 +180,7 @@ class Calculator {
 
 ## This Keyword
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Reference to the current object instance**
 
@@ -198,7 +198,7 @@ class Person(name: String) {
 
 ## Inheritance
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Mechanism to create child classes from parent classes**
 
@@ -218,7 +218,7 @@ class VicePresident(name: String) : Employee(name)
 
 ## Function Overriding
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Redefining parent class functions in child classes**
 
@@ -252,7 +252,7 @@ open class Manager : Employee() {
 
 ## Properties Overriding
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Redefining parent class properties in child classes**
 
@@ -270,7 +270,7 @@ class Rectangle : Shape() {
 
 ## Super Keyword
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Access parent class members from child class**
 
@@ -316,7 +316,7 @@ class Manager(name: String) : Employee(name)
 
 ## Any Class
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **The root superclass of all Kotlin classes**
 
@@ -332,7 +332,7 @@ All classes in Kotlin inherit from `Any` by default.
 
 ## Type Check & Casts
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Checking and converting object types at runtime**
 
@@ -384,7 +384,7 @@ val string: String? = any as? String // Returns null if fails
 
 ## toString Function
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **String representation of an object**
 
@@ -400,7 +400,7 @@ class Product(val name: String, val price: Int) {
 
 ## Equals Function
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Custom object comparison logic**
 
@@ -422,7 +422,7 @@ class Product(val name: String, val price: Int) {
 
 ## HashCode Function
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Numeric representation for object identification**
 
@@ -440,7 +440,7 @@ class Product(val name: String, val price: Int) {
 
 ## Abstract Class
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Classes that cannot be instantiated, only inherited**
 
@@ -473,7 +473,7 @@ class Cat : Animal() {
 
 ## Getter and Setter
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Custom accessors for properties**
 
@@ -497,7 +497,7 @@ class Person {
 
 ## Late-Initialized Properties
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Properties initialized after object creation**
 
@@ -519,7 +519,7 @@ println(person.name)
 
 ## Interface
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Contracts defining what classes must implement**
 
@@ -578,7 +578,7 @@ interface Child : Base {
 
 ## Visibility Modifiers
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Access control for classes, functions, and properties**
 
@@ -602,7 +602,7 @@ open class Product {
 
 ## Extension Function
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Adding functions to existing types without inheritance**
 
@@ -630,7 +630,7 @@ println(result.helloSafe()) // Hello Null
 
 ## Extension Properties
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Adding properties to existing types**
 
@@ -646,7 +646,7 @@ println(name.firstChar) // K
 
 ## Data Class
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Classes optimized for holding data with auto-generated methods**
 
@@ -676,7 +676,7 @@ val product2 = product1.copy(price = 12000)
 
 ## Sealed Class
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Restricted class hierarchies with limited subclasses**
 
@@ -702,7 +702,7 @@ fun handleResult(result: Result) = when(result) {
 
 ## Inner Class
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Classes nested inside other classes with access to outer class**
 
@@ -724,7 +724,7 @@ println(room.getAddress()) // Jakarta
 
 ## Anonymous Class
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Classes created without explicit declaration**
 
@@ -746,7 +746,7 @@ action.action()
 
 ## Enum Class
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Fixed set of constant values with type safety**
 
@@ -782,7 +782,7 @@ enum class Direction(val code: Int) {
 
 ## Singleton Object
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Objects with only one instance throughout the app**
 
@@ -815,7 +815,7 @@ println(Company.Config.NAME)
 
 ## Companion Object
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Static-like members for classes in Kotlin**
 
@@ -835,7 +835,7 @@ val user = User.create("John")
 
 ## Type Alias
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Alternative names for existing types**
 
@@ -861,7 +861,7 @@ fun process(name: String, lambda: Lambda): String {
 
 ## Inline Class
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Wrapper classes with zero runtime overhead**
 
@@ -878,7 +878,7 @@ val token = Token("abc123")
 
 ## Delegation
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Forwarding implementation to another object**
 
@@ -912,7 +912,7 @@ class Derived(b: Base) : Base by b {
 
 ## Lazy Properties
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Properties initialized only when first accessed**
 
@@ -933,7 +933,7 @@ println(heavy.data) // Heavy Data (no computation)
 
 ## Observable Properties
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Properties that notify when values change**
 
@@ -955,7 +955,7 @@ person.name = "John" // name: NoName -> John
 
 ## Destructuring Declarations
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Extracting multiple values from objects**
 
@@ -996,7 +996,7 @@ users.forEach { (name, age) ->
 
 ## Operator Overloading
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 *_Custom behavior for operators like +, -, _, etc.__
 
@@ -1055,7 +1055,7 @@ greeter("World") // Hello, World!
 
 ## Null Safety
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Preventing null pointer exceptions**
 
@@ -1090,7 +1090,7 @@ val length = name!!.length // Throws exception if name is null
 
 ## Exception
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Error handling and throwing exceptions**
 
@@ -1144,7 +1144,7 @@ try {
 
 ## Annotation
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Metadata attached to code elements**
 
@@ -1177,7 +1177,7 @@ class Person {
 
 ## Reflection
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Inspecting code structure at runtime**
 
@@ -1196,7 +1196,7 @@ val kClass2 = Person::class
 
 ## Scope Functions
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Functions for executing code blocks on objects (let, run, apply, also, with)**
 
@@ -1258,7 +1258,7 @@ val result = with("Kotlin") {
 
 ## Polymorphism
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 **Objects taking multiple forms through inheritance**
 
@@ -1306,6 +1306,6 @@ greet(VicePresident("Bob"))  // Hello World, I'm VP Bob
 
 ---
 
-[[#📋 Content List|↑ Back to Content]]
+[↑ Back to Content](#content-list)
 
 _Created from Kotlin Object Oriented Programming by Eko Kurniawan Khannedy_

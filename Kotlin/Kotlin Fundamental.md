@@ -6,60 +6,60 @@ _Based on material by Eko Kurniawan Khannedy_
 
 ### Fundamentals
 
-- [[#🎯 About Kotlin]]
-- [[#🛠️ Setup & Installation]]
-- [[#👋 Hello World]]
+- [🎯 About Kotlin](#about-kotlin)
+- [🛠️ Setup & Installation](#setup-installation)
+- [👋 Hello World](#hello-world)
 
 ### Data Types
 
-- [[#🔢 Number Types]]
-- [[#🔤 Character]]
-- [[#✅ Boolean]]
-- [[#📝 String]]
-- [[#📊 Array]]
-- [[#📏 Range]]
+- [🔢 Number Types](#number-types)
+- [🔤 Character](#character)
+- [✅ Boolean](#boolean)
+- [📝 String](#string)
+- [📊 Array](#array)
+- [📏 Range](#range)
 
 ### Variables
 
-- [[#💾 Variable Declaration]]
-- [[#❓ Nullable Types]]
-- [[#🔒 Constants]]
+- [💾 Variable Declaration](#variable-declaration)
+- [❓ Nullable Types](#nullable-types)
+- [🔒 Constants](#constants)
 
 ### Operators
 
-- [[#➕ Mathematical Operations]]
-- [[#⚖️ Comparison Operations]]
-- [[#🔀 Boolean Operations]]
+- [➕ Mathematical Operations](#mathematical-operations)
+- [⚖️ Comparison Operations](#comparison-operations)
+- [🔀 Boolean Operations](#boolean-operations)
 
 ### Control Flow
 
-- [[#🔀 If Expression]]
-- [[#🔄 When Expression]]
-- [[#🔁 For Loop]]
-- [[#⏰ While Loop]]
-- [[#⛔ Break & Continue]]
+- [🔀 If Expression](#if-expression)
+- [🔄 When Expression](#when-expression)
+- [🔁 For Loop](#for-loop)
+- [⏰ While Loop](#while-loop)
+- [⛔ Break & Continue](#break-continue)
 
 ### Functions
 
-- [[#⚙️ Function Basics]]
-- [[#📥 Function Parameters]]
-- [[#📤 Return Types]]
-- [[#🔧 Extension Functions]]
-- [[#λ Lambda Expressions]]
-- [[#🎯 Higher-Order Functions]]
-- [[#⚡ Inline Functions]]
-- [[#🔄 Recursive Functions]]
+- [⚙️ Function Basics](#function-basics)
+- [📥 Function Parameters](#function-parameters)
+- [📤 Return Types](#return-types)
+- [🔧 Extension Functions](#extension-functions)
+- [λ Lambda Expressions](#λ-lambda-expressions)
+- [🎯 Higher-Order Functions](#higher-order-functions)
+- [⚡ Inline Functions](#inline-functions)
+- [🔄 Recursive Functions](#recursive-functions)
 
 ### Advanced Topics
 
-- [[#🏷️ Labels]]
-- [[#📦 Package & Import]]
-- [[#💬 Comments]]
-- [[#🎭 Anonymous Functions]]
-- [[#🔐 Closure]]
-- [[#🎯 Function Scope]]
-- [[#🔗 Infix Notation]]
-- [[#🚀 Main Function Parameters]]
+- [🏷️ Labels](#labels)
+- [📦 Package & Import](#package-import)
+- [💬 Comments](#comments)
+- [🎭 Anonymous Functions](#anonymous-functions)
+- [🔐 Closure](#closure)
+- [🎯 Function Scope](#function-scope)
+- [🔗 Infix Notation](#infix-notation)
+- [🚀 Main Function Parameters](#main-function-parameters)
 
 ---
 
@@ -79,7 +79,7 @@ _Based on material by Eko Kurniawan Khannedy_
 - Primary language for Android development
 - Supported by Spring Framework
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -98,7 +98,7 @@ export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_241.jdk/Contents/Ho
 export PATH="$JAVA_HOME/bin:$PATH"
 ```
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -110,7 +110,7 @@ fun main() {
 }
 ```
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -149,7 +149,7 @@ val long: Long = int.toLong()
 val double: Double = int.toDouble()
 ```
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -161,7 +161,7 @@ val newLine: Char = '\n'
 val tab: Char = '\t'
 ```
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -172,7 +172,7 @@ val isActive: Boolean = true
 val isComplete: Boolean = false
 ```
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -221,7 +221,7 @@ println("Version ${version + 1}")
 println("Name length: ${name.length}")
 ```
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -269,7 +269,7 @@ names.set(1, "Doe")
 val names: Array<String?> = arrayOf("John", null, "Jane")
 ```
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -302,7 +302,7 @@ val reverse = 10 downTo 1
 val step = 1..10 step 2  // 1, 3, 5, 7, 9
 ```
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -330,7 +330,7 @@ val/var variableName: DataType = data
 
 **Recommendation:** Use `val` (immutable) by default
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -351,7 +351,7 @@ val names: Array<String?> = arrayOf("John", null, "Jane")
 
 **Note:** Use nullable types sparingly, only when absolutely necessary.
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -365,7 +365,7 @@ const val PI = 3.14159
 
 **Convention:** Use UPPER_CASE for constant names.
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -408,7 +408,7 @@ var a = 10
 !true  // Boolean negation (false)
 ```
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -426,7 +426,7 @@ println(a == b)  // false - Equal to
 println(a != b)  // true  - Not equal to
 ```
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -470,7 +470,7 @@ println(!a)      // false - NOT
 |!|true|false|
 |!|false|true|
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -528,7 +528,7 @@ val grade = if (score >= 90) {
 }
 ```
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -594,7 +594,7 @@ when {
 }
 ```
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -628,7 +628,7 @@ for (i in 1..10 step 2) {
 }
 ```
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -658,7 +658,7 @@ do {
 
 **Note:** Do-While executes the block at least once before checking the condition.
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -686,7 +686,7 @@ for (i in 1..5) {
 }
 ```
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -723,7 +723,7 @@ fun sum(a: Int, b: Int) {
 sum(5, 3)  // 8
 ```
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -766,7 +766,7 @@ println(sum(1, 2, 3))           // 6
 println(sum(1, 2, 3, 4, 5))     // 15
 ```
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -829,7 +829,7 @@ fun getStatus(code: Int) = when (code) {
 }
 ```
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -856,7 +856,7 @@ fun Int.times(message: String) {
 
 **Note:** Use extension functions wisely as they can make code harder to understand if overused.
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -900,7 +900,7 @@ val numbers = arrayOf(1, 2, 3, 4, 5)
 val evenNumbers = numbers.filter(::isEven)
 ```
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -927,7 +927,7 @@ numbers.forEach { println(it) }
 numbers.forEach({ println(it) })
 ```
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -956,7 +956,7 @@ inline fun process(
 
 **Benefits:** Avoids creating lambda objects repeatedly, improving performance.
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -1002,7 +1002,7 @@ factorial(5) => 5 * factorial(4) => 4 * factorial(3) => ...
 factorialTail(5, 1) => factorialTail(4, 5) => factorialTail(3, 20) => ...
 ```
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -1053,7 +1053,7 @@ fun printNumbers() {
 }
 ```
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -1090,7 +1090,7 @@ fun main() {
 
 **Convention:** Package names use lowercase letters, separated by dots for sub-packages.
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -1117,7 +1117,7 @@ fun greet(name: String): String {
 
 **Best Practice:** The best comment is the code itself. Write self-documenting code.
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -1140,7 +1140,7 @@ val result = calculate(10, 5, fun(a, b) = a - b)
 
 **Difference from Lambda:** Anonymous functions allow explicit return statements anywhere, while lambdas treat the last line as the return value.
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -1163,7 +1163,7 @@ println(counter())  // 3
 
 **Definition:** Closure is the ability of a function/lambda to interact with data in the surrounding scope.
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -1188,7 +1188,7 @@ fun outer() {
 - Functions inside other functions have limited scope
 - Inner functions can access outer function variables
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -1209,7 +1209,7 @@ println(3.times("Hello "))
 - Must have single parameter
 - Parameter cannot be varargs or have default value
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -1229,7 +1229,7 @@ fun main(args: Array<String>) {
 kotlin MyProgram arg1 arg2 arg3
 ```
 
-[[#📑 Table of Contents|← Back to Contents]]
+[← Back to Contents](#table-of-contents)
 
 ---
 
@@ -1254,4 +1254,4 @@ kotlin MyProgram arg1 arg2 arg3
 
 _This cheat sheet is based on "Kotlin Dasar" by Eko Kurniawan Khannedy_
 
-[[#📑 Table of Contents|← Back to Top]]
+[← Back to Top](#table-of-contents)

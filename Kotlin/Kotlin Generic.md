@@ -5,22 +5,22 @@
 
 ## 📋 Content List
 
-1. [[#Introduction to Generic]]
-2. [[#Generic Class]]
-3. [[#Generic Function]]
-4. [[#Invariant]]
-5. [[#Covariant]]
-6. [[#Contravariant]]
-7. [[#Generic Constraints]]
-8. [[#Type Projection]]
-9. [[#Star Projection]]
-10. [[#Type Erasure]]
-11. [[#Comparable Interface]]
-12. [[#Delegate Interfaces]]
-    - [[#ReadOnlyProperty Interface]]
-    - [[#ReadWriteProperty Interface]]
-    - [[#ObservableProperty Class]]
-13. [[#Generic Extension Function]]
+1. [Introduction to Generic](#introduction-to-generic)
+2. [Generic Class](#generic-class)
+3. [Generic Function](#generic-function)
+4. [Invariant](#invariant)
+5. [Covariant](#covariant)
+6. [Contravariant](#contravariant)
+7. [Generic Constraints](#generic-constraints)
+8. [Type Projection](#type-projection)
+9. [Star Projection](#star-projection)
+10. [Type Erasure](#type-erasure)
+11. [Comparable Interface](#comparable-interface)
+12. [Delegate Interfaces](#delegate-interfaces)
+    - [ReadOnlyProperty Interface](#readonlyproperty-interface)
+    - [ReadWriteProperty Interface](#readwriteproperty-interface)
+    - [ObservableProperty Class](#observableproperty-class)
+13. [Generic Extension Function](#generic-extension-function)
 
 ---
 
@@ -53,7 +53,7 @@ class Container(val data: Any)
 class Container<T>(val data: T)
 ```
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -91,7 +91,7 @@ val pair = Pair<String, Int>("Age", 25)
 - Data containers
 - Type-safe APIs
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -136,7 +136,7 @@ printItem("Hello")      // T = String
 combine("A", 1)         // T = String, U = Int
 ```
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -168,7 +168,7 @@ val stringContainer: Container<String> = Container("Hello")
 
 **Key Point:** If a class both produces (returns) and consumes (accepts) type T, it should remain invariant.
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -206,7 +206,7 @@ val anyProducer: Producer<Any> = stringProducer // OK!
 
 **Example:** `List<out T>` in Kotlin is covariant because it's read-only.
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -246,7 +246,7 @@ val stringConsumer: Consumer<String> = anyConsumer // OK!
 
 **Example:** `Comparable<in T>` is contravariant.
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -289,7 +289,7 @@ class Document<T>(val content: T) where T : CharSequence, T : Printable
 - `T : Any` - Non-nullable types only
 - `T : SomeInterface` - Interface implementations
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -331,7 +331,7 @@ fun copyTo(dest: Array<in String>) {
 - `out`: Read-only access (producer)
 - `in`: Write-only access (consumer)
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -374,7 +374,7 @@ val item: Any? = anyList[0] // OK - reads as Any?
 - Type parameter is irrelevant to operation
 - Checking structure, not content
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -429,7 +429,7 @@ fun <T> dangerous() {
 
 **Best Practice:** Rely on compile-time checking, not runtime.
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -485,7 +485,7 @@ println(person1 >= person2) // false
 - Work with sorting functions
 - Use comparison operators
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -532,7 +532,7 @@ println(example.name) // Logs: "Getting value of name"
 - Computed properties
 - Value transformation before return
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -586,7 +586,7 @@ example.age = 30  // OK
 - Logging changes
 - Transforming values
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -640,7 +640,7 @@ var score: Int by Delegates.vetoable(0) { prop, old, new ->
 }
 ```
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -708,7 +708,7 @@ val length = "Hello".convertTo { it.length }  // 5
 - Chainable methods
 - Reusable across different types
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -771,4 +771,4 @@ fun <T> T.toList(): List<T> = listOf(this)
 - YouTube: youtube.com/c/ProgrammerZamanNow
 - Telegram: @khannedy
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)

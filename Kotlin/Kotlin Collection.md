@@ -5,31 +5,31 @@
 
 ## 📋 Content List
 
-1. [[#Introduction to Collection]]
-2. [[#List]]
-3. [[#Set]]
-4. [[#Pair]]
-5. [[#Map]]
-6. [[#Collection Interface]]
-7. [[#Iterable]]
-8. [[#Iterator]]
-9. [[#Collection Conversion]]
-10. [[#Collection Operations]]
-11. [[#Transformations]]
-    - [[#Mapping]]
-    - [[#Zipping]]
-    - [[#Association]]
-    - [[#Flattening]]
-    - [[#String Representation]]
-12. [[#Filtering]]
-13. [[#Plus & Minus Operators]]
-14. [[#Grouping]]
-15. [[#Slice Operations]]
-16. [[#Retrieving Elements]]
-17. [[#Ordering]]
-18. [[#Aggregate Operations]]
-19. [[#Sequence]]
-20. [[#Specific Operations]]
+1. [Introduction to Collection](#introduction-to-collection)
+2. [List](#list)
+3. [Set](#set)
+4. [Pair](#pair)
+5. [Map](#map)
+6. [Collection Interface](#collection-interface)
+7. [Iterable](#iterable)
+8. [Iterator](#iterator)
+9. [Collection Conversion](#collection-conversion)
+10. [Collection Operations](#collection-operations)
+11. [Transformations](#transformations)
+    - [Mapping](#mapping)
+    - [Zipping](#zipping)
+    - [Association](#association)
+    - [Flattening](#flattening)
+    - [String Representation](#string-representation)
+12. [Filtering](#filtering)
+13. [Plus & Minus Operators](#plus-minus-operators)
+14. [Grouping](#grouping)
+15. [Slice Operations](#slice-operations)
+16. [Retrieving Elements](#retrieving-elements)
+17. [Ordering](#ordering)
+18. [Aggregate Operations](#aggregate-operations)
+19. [Sequence](#sequence)
+20. [Specific Operations](#specific-operations)
 
 ---
 
@@ -48,7 +48,7 @@ Collections are fundamental data structures that store multiple elements. Kotlin
 - All collection types are available in the Kotlin standard library
 - Two main categories: Immutable (read-only) and Mutable (read/write)
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -70,7 +70,7 @@ An ordered collection that allows duplicate elements and provides index-based ac
 - When duplicates are allowed
 - Index-based access is needed
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -92,7 +92,7 @@ An unordered collection that stores unique elements only. Duplicates are automat
 - Perfect for storing unique data
 - No guaranteed order
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -118,7 +118,7 @@ key to value  // infix notation
 - Creating Map entries
 - Temporary data grouping
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -140,7 +140,7 @@ A collection of key-value pairs where each key is unique. Also known as a dictio
 - Duplicate keys will replace old values
 - Any data type can be used as key or value
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -161,7 +161,7 @@ The base interface for all collection types, providing general operations for re
 - All List, Set, and Map extend from Collection
 - MutableCollection adds write operations
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -181,7 +181,7 @@ The superclass of Collection interface, providing general operations for iterati
 - Enables for-loop functionality
 - MutableIterable adds removal during iteration
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -203,7 +203,7 @@ Provides iteration capabilities with different types for different collections.
 - `remove()` - Remove current element (mutable)
 - `hasPrevious()`, `previous()` - For ListIterator
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -226,7 +226,7 @@ arrayOf(1,2,3).toList()
 setOf(1,2,3).toMutableList()
 ```
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -251,7 +251,7 @@ Kotlin provides extensive extension functions for collection operations. These o
 - Original collection remains unchanged
 - Safe for immutable programming
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -275,7 +275,7 @@ Transform each element in a collection to create a new collection.
 listOf(1,2,3).map { it * 2 } // [2,4,6]
 ```
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -296,7 +296,7 @@ listOf(1,2,3).zip(listOf("a","b","c"))
 // [(1,a), (2,b), (3,c)]
 ```
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -317,7 +317,7 @@ listOf("a","bb","ccc").associateWith { it.length }
 // {a=1, bb=2, ccc=3}
 ```
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -337,7 +337,7 @@ listOf(listOf(1,2), listOf(3,4)).flatten()
 // [1,2,3,4]
 ```
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -358,7 +358,7 @@ listOf(1,2,3).joinToString(", ", "[", "]")
 // "[1, 2, 3]"
 ```
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -384,7 +384,7 @@ Filter collections based on conditions (predicates).
 - `none { condition }` - None match
 - `all { condition }` - All match
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -407,7 +407,7 @@ list - element
 list1 + list2
 ```
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 ## Grouping
@@ -432,7 +432,7 @@ listOf("a","bb","ccc").groupBy { it.length }
 // {1=[a], 2=[bb], 3=[ccc]}
 ```
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -466,7 +466,7 @@ Extract portions of collections.
 
 - `windowed(size, step, partialWindow)` - Sliding window
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -498,7 +498,7 @@ Get single elements from collections.
 - `containsAll(collection)` - Check all exist
 - `isEmpty()`, `isNotEmpty()` - Check if empty
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -526,7 +526,7 @@ Sort collections in various ways.
 
 - `shuffled()` - Random order
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -555,7 +555,7 @@ Perform calculations on collection data.
 - `reduceRight()`, `foldRight()` - From end
 - `reduceIndexed()`, `foldIndexed()` - With index
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -585,7 +585,7 @@ generateSequence { }
 
 **Key Point:** Operations on Sequence are only executed when a terminal operation (like `toList()`, `count()`) is called.
 
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -633,7 +633,7 @@ val name by map  // Delegate to map
 ```kotlin
 for ((key, value) in map) { }
 ```
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
@@ -669,7 +669,7 @@ list.groupBy { it % 2 }
 list.sum()
 list.reduce { acc, i -> acc + i }
 ```
-[[#📋 Content List|← Back to Contents]]
+[← Back to Contents](#content-list)
 
 ---
 
